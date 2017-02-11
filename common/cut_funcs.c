@@ -18,7 +18,7 @@ void random_cut(int **part, int num_vertices, int seed) {
     }
 
     // broadcast to everyone else
-    MPI_Bcast(p_part, num_vertices, MPI_INT, rank, MPI_COMM_WORLD);
+    MPI_Bcast(p_part, num_vertices, MPI_INT, 0, MPI_COMM_WORLD);
 }
 
 void print_cut_size_imbalance(int num_vertices, int *adj_begin, int *adj, int *part) {
