@@ -13,6 +13,7 @@ Makefile
 *.cmake
 CMakeCache.*
 CMakeFiles/
+.idea/
 
 # User-specific stuff:
 .idea/workspace.xml
